@@ -62,11 +62,16 @@ def start_game
                 decision2 = gets.chomp
             if decision2 == "1"
                 p "You swallow the distracted Red in a single bite! What do you do next?"
+                    p "1: You rest after swallowing Little Red in a single bite."
+                    p "2: You are still hungry, so you head to Grandma's."
+                decision3 = gets.chomp 
+            if decision3 == "1"
+                    p "You rest after swallowing Little Red in a single bite. What do you do next?"
+                    
             elsif decision2 == "2"
                 p "You run swiftly to Grandma's House! What do you do next?"
                     p "1: You rest after swallowing Little Red in a single bite."
                     p "2: You are still hungry, so you head to Grandma's."
-
             end
         elsif
             options == "n"
