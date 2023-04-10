@@ -66,7 +66,13 @@ def start_game
                     p "2: You are still hungry, so you head to Grandma's."
                 decision3 = gets.chomp 
             if decision3 == "1"
-                    p "You rest after swallowing Little Red in a single bite. What do you do next?"
+                    p "You rest after swallowing Little Red in a single bite."
+                    gets
+                    p "As you slumber. Sleeping off you ill gotten meal."
+                    gets
+                    p "The hunts approaches you and hears little red crying in your belly"
+                    gets
+                    p "He swings his shining axe. cleaving open you stomach and saving little "
                     
             elsif decision2 == "2"
                 p "You run swiftly to Grandma's House! What do you do next?"
@@ -77,6 +83,7 @@ def start_game
             options == "n"
             p "Well... this was a short story. Goodbye!"
         end
+		end
 end
 
 
