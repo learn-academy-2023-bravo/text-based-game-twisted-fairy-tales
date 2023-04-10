@@ -39,19 +39,66 @@
                 # "grandma wires all the money from the wolfs bank account into her own and calls the huntsman"
                 # user chooses option 2
                 # "Grandma reaches benind her bed and pulls out an axe and slices the wolf up."
+                # Press enter to continue
 
 
 def start_game
-   welcome_message =  "You're the big bad wolf and your goal is to eat"
-end
-puts start_game
-#  last thing we talked about* do we need a def to call option 1 and 2
-        option1 = "Go distract little red to delay her from grandmas house"
-        option2 = "Go directly to grandmas house"
+    p "You are the big bad wolf, and your goal is to EAT! Press enter to continue"
+    gets
+    p "Are you ready to eat? y/n"
+    options = gets.chomp
+    if options == "y"
+       p "You see Little Red walking to grandma's house. Press enter to continue"
+        gets
+        p "What do you do next?"
+           p "1: go distract Little Red"
+           p "2: go directly to Grandma's house"
+            decision1 = gets.chomp
+            if decision1 == "1"
+                p "You have successfully distracted Red! What do you do next?"
+                   p "1: Eat the distracted Little Red"
+                   p "2: Go to Grandma's House"
+            end
+                decision2 = gets.chomp
+            if decision2 == "1"
+                p "You swallow the distracted Red in a single bite! What do you do next?"
+            elsif decision2 == "2"
+                p "You run swiftly to Grandma's House! What do you do next?"
+                    p "1: You rest after swallowing Little Red in a single bite."
+                    p "2: You are still hungry, so you head to Grandma's."
 
- def story_prompt
-    promt = "you see little red riding hood heading to grandmas house what do you do"
-       
+            end
+        elsif
+            options == "n"
+            p "Well... this was a short story. Goodbye!"
+        end
 end
 
-first_choice = gets.chomp 
+
+
+
+
+# def start_game
+#     p 'What is your name?'
+#     name = gets.chomp
+#     p "You are #{name}, a college student and best friend of Alex. You are on your way to stay at her family's house for the weekend. After dinner, Alex goes to bed, leaving you alone in your room. You hear a doorbell ring, and shortly after, screams of terror fill the house. You must quickly find a way to escape the house and survive the night. What do you do? "
+  
+  
+  
+#       p "[1] = Hide under the bed."
+#       p "[2] = Try to find a weapon and defend yourself."
+#       choice = gets.chomp.to_i
+#       if choice == 1
+#        p 'Somebody entered the room, all you can see is their feet. A knife comes slashing through the mattress and you die. GAME OVER.'
+#         start_game 
+#       elsif choice == 2
+#        p 'You search your room and find a sharp letter opener. As you creep through the house, you hear footsteps and realize the killer is nearby. You must be quick and silent.'
+#        level_one
+#       end
+#     end
+  
+  
+  
+  
+  
+  
